@@ -1,0 +1,21 @@
+
+Preventing Overfitting:
+
+1. Hold-out (data)
+
+2. Cross-validation (data)
+
+3. Data augmentation (data)
+
+4. Feature selection (data)
+
+5. L1 / L2 regularization (learning algorithm)
+
+6. Remove layers / number of units per layer (model)
+an over-complex model may more likely overfit. Therefore, we can directly reduce the model’s complexity by removing layers and reduce the size of our model. We may further reduce complexity by decreasing the number of neurons in the fully-connected layers.
+
+7. Dropout (model)
+
+
+8. Early stopping (model)
+We can first train our model for an arbitrarily large number of epochs and plot the validation loss graph (e.g., using hold-out). Once the validation loss begins to degrade (e.g., stops decreasing but rather begins increasing), we stop the training and save the current model.
